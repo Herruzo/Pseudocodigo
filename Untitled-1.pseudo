@@ -1,0 +1,51 @@
+/* Algorítmo del coste y la cantidad de ingrediente de una paella, según el número de comensales, siendo la cantidad por ración: 100gr de arroz, 50gr de langostinos y 20gr de pimientos. */
+
+// Creamos las variables que vamos a utilizar para el desarrollo del pseudocodigo. 
+
+VARIABLES: numcomensales, precioArroz, precioLangostinos, precioPimientos, totalArroz, totalLangostinos, totalPimientos, precioTotalArroz, precioTotalLangostinos, precioTotalPimientos, totalPrecio
+
+// Inicio del programa
+
+INICIO
+
+    // Solicitamos al usuario los datos y los guardamos en las variables correspondientes
+
+    Escribe "Introduce número de comensales"
+    Leer numcomensales
+
+    Escribe "Introduce el precio del kg. de arroz"
+    Leer precioArroz
+
+    Escribe "Introduce el precop del kg. de langostinos"
+    Leer precioLangostinos
+
+    Escribe "Introduce el precio del kg. de pimientos"
+    Leer precioPimientos
+
+    // Realizamos los calculos necesarios para calcular las cantidades de ingrediente según el nº de comensales.
+    totalArroz = 0.1 * numcomensales
+    totalLangostinos = 0.05 * numcomensales
+    totalPimientos = 0.02 * numcomensales
+
+    // Mostramos al usuario las cantidades necesarias de ingredientes.
+    Escribe "Total de arroz en kg." + totalArroz
+    Escribe "Total de langostinos en kg." + totalLangostinos
+    Escribe "Total de pimientos en kg." + totalPimientos
+
+    // Calculamos los precios
+    precioTotalArroz = totalArroz * precioArroz
+    precioTotalLangostinos = totalLangostinos * precioLangostinos
+    precioTotalPimientos = totalPimientos * precioPimientos
+
+    // Calculamos el total
+    totalPrecio = precioTotalArroz + precioTotalLangostinos + precioTotalPimientos
+
+    //informamos del coste total
+    Escribir"El coste total de la paella es:" + totalPrecio
+
+//finalizamos el programa
+
+FIN
+
+
+		
